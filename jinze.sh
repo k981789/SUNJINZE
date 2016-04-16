@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 # wgethttp://7xs2gz.dl1.z0.glb.clouddn.com/openvpn.sh && bash openvpn.sh 2>&1 | tee openvpn.log
@@ -23,7 +23,7 @@ echo "脚本已由阿里云/腾讯云CentOS/网易云6.7 测试通过"
 echo "请按回车继续开始安装："
 read
 echo 
-# jinzeml
+# sbwml
 cd /
 rm -rf passwd
 echo "#“空”密码文件
@@ -43,7 +43,7 @@ rm -rf /home/vpn.tar.gz
 echo "安装执行命令..."
 sleep 2
 yum install -y redhat-lsb curl gawk
-# jinzeml
+# sbwml
 version=`lsb_release -a | grep -e Release|awk -F ":" '{ print $2 }'|awk -F "." '{ print $1 }'`
 echo "正在匹配软件源..."
 sleep 3
@@ -280,7 +280,7 @@ echo "请复制“https://transfer.sh/..”链接到浏览器下载CA证书/Open
 echo 
 echo '=========================================================================='
 echo OpenVPN链接账号：admin
-echo OpenVPN链接密码：jinzeml.cn
+echo OpenVPN链接密码：jinze
 echo 查看用户账号：cat /passwd
 echo
 echo 账号/密码存放位置：/passwd
